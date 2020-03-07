@@ -1,0 +1,23 @@
+{
+  "name": "curly-fortnight",
+  "version": "1.0.0",
+  "description": "V5 - React from FEM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrontEndMasters-G3Ram/curly-fortnight.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrontEndMasters-G3Ram/curly-fortnight/issues"
+  },
+  "homepage": "https://github.com/FrontEndMasters-G3Ram/curly-fortnight#readme",
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
