@@ -6,6 +6,7 @@ function useDropdown(label, defaultState, options) {
   const dropdown = () => {
     return (
       <label htmlFor={id}>
+        {label}
         <select
           id={id}
           value={state}
@@ -14,7 +15,7 @@ function useDropdown(label, defaultState, options) {
           onBlur={e => e.target.value}
           disabled={options.length === 0}
         >
-          <options value="All">All</options>
+          <option value="All">All</option>
           {options.map((item, index) => (
             <option key={index} value={item}>
               {item}
