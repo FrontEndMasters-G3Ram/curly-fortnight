@@ -11,8 +11,8 @@ function useDropdown(label, defaultState, options) {
           id={id}
           value={state}
           name={id}
-          onChange={e => e.target.value}
-          onBlur={e => e.target.value}
+          onChange={e => setState(e.target.value)}
+          onBlur={e => setState(e.target.value)}
           disabled={options.length === 0}
         >
           <option value="All">All</option>
