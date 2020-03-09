@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import pet, { ANIMALS } from "@frontendmasters/pet";
 import useDropdown from "./useDropdown";
+import Results from "./Result";
 
 function SearchParam() {
   const [location, setLocation] = useState("Seattle, WA");
@@ -51,6 +52,7 @@ function SearchParam() {
         <BreedDropdown />
         <button>Submit</button>
       </form>
+      <Results pets={pets} />
     </div>
   );
 }
