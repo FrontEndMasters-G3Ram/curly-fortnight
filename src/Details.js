@@ -11,14 +11,16 @@ class Details extends React.Component {
 
   async componentDidMount() {
     try {
-      const myAnimal = await pet.animal(this.props.id);
+      const { animal } = await pet.animal(this.props.id);
+      console.log("-------");
+      console.log(animal);
       this.setState({
-        name: myAnimal.name,
-        animal: myAnimal.type,
-        location: `${myAnimal.contact.address.city}, ${myAnimal.contact.address.state}`,
-        description: myAnimal.description,
-        media: myAnimal.photos,
-        breed: myAnimal.breeds.primary,
+        name: animal.name,
+        animal: animal.type,
+        location: `${animal.contact.address.city}, ${animal.contact.address.state}`,
+        description: animal.description,
+        media: animal.photos,
+        breed: animal.breeds.primary,
         loading: false
       });
     } catch (error) {
