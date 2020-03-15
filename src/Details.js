@@ -14,6 +14,7 @@ class Details extends React.Component {
   async componentDidMount() {
     try {
       const { animal } = await pet.animal(this.props.id);
+
       this.setState({
         name: animal.name,
         animal: animal.type,
