@@ -12,8 +12,14 @@ class Carousel extends React.Component {
     if (media.length) {
       photos = media.map(({ large }) => large);
     }
-    return photos;
+    return { photos };
   }
+
+  handleIndexClick = event => {
+    this.setState({
+      active: +event.target.dataset.index
+    });
+  };
 
   render() {
     const { photos, active } = this.state;
