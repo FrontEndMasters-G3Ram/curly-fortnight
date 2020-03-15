@@ -52,7 +52,7 @@ function SearchParam() {
         </label>
         <AnimalDropdown />
         <BreedDropdown />
-        <button style={{ color: theme }}>Submit</button>
+        <button style={{ backgroundColor: theme }}>Submit</button>
       </form>
       <Results pets={pets} />
     </div>
